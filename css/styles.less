@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #09090A;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #09090A;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #6366F1;   /* color of the scroll thumb */
+    border-radius: 20px;
+  }
+
+/////////////////////// HEADER
+
+header {
+    padding: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    background-color: #09090a;
+
+    button {
+        width: fit-content;
+    
+        height: 52px;
+        border-radius: 8px;
+        border-color: #6366F1;
+        background: none;
+    
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 23px;
+        gap:  12px;
+        transition: all 0.4s;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        transform: scale(0.96);
+    }
+}
+
+
+#form-habit {
+    display: flex;
+
+    padding: 150px 48px 48px;
+    width: fit-content;
+
+    .habits {
+        margin-top: 60px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    
+    .habit {
+        width: 64px;
+        height: 64px;
+        
+        font-size: 32px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+.days {
+    display: flex;
+    margin-left: 32px;
+    gap: 4px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    gap: 24px;
+}
+
+.day div {
+    margin-bottom: 8px;
+    
+    font-family: 'Roboto Mono', monospace;
+    color: #A1A1AA;
+    font-size: 20px;
+    text-align: center;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 64px;
+    height: 64px;
+
+    border: 2px solid #27272A;
+    border-radius: 8px;
+
+    background: #181818;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input:checked {
+    background: #6366F1;
+    border: 2px solid #6366F1;
+}
+
+@media (max-width: 570px) {
+    button span {
+        display: none;
+    }
+}

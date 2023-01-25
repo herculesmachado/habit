@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet/less" type="text/css" href="/css/styles.less" />
+    <title>Habit</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo Habit">
+        </div>
+
+       
+        <button>
+            <img src="img/Plus.png" alt="sinal de mais">
+            <span>Registrar meu dia</span> 
+        </button>
+       
+    </header>
+
+    <form id="form-habit">
+
+        <div class="habits">
+            
+            <div class="habit" data-name="run">
+                <img src="img/run.png" alt="run">
+            </div>
+
+            <div class="habit" data-name="water">
+                <img src="img/water.png" alt="water">
+            </div>
+
+            <div class="habit" data-name="exercises">
+                <img src="img/exercises.png" alt="exercises">
+            </div>
+
+            <div class="habit" data-name="sleep">
+                <img src="img/sleep.png" alt="sleep">
+            </div>
+
+            <div class="habit" data-name="wander">
+                <img src="img/wander.png" alt="wander">
+            </div>
+
+            <div class="habit" data-name="food">
+                <img src="img/food.png" alt="food">
+            </div>
+        </div>
+
+        <div class="days"></div>
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
